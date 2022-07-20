@@ -67,17 +67,18 @@ header h1 {
 
 /* 2단계 메뉴 */
 #gnb .depth2 {
-    height: 0;
+    max-height: 0;
     /* opacity: 0; */
-    display: none;
+    /* display: none; */
+
     overflow: hidden;
     transition: 0.4s;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 #gnb .depth2.on {
-    height: auto;   
-    opacity: 1;
-    display: block;
+    max-height: 200px;   
+    /* opacity: 1; */
+    /* display: block; */
 }
 #gnb .depth2 > li > a {
     display: block;
