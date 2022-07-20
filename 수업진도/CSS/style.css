@@ -24,12 +24,14 @@ ul {
     width: 1200px;
     margin: 0 auto;
     background: #ccc;
+    /* outline: 1px solid black; */
 }
 
 /* ------------header---------------- */
 header {
     height: 100px;
     position: relative;
+    z-index: 999;
 }
 header h1 {
     position: absolute;
@@ -66,7 +68,8 @@ header h1 {
 /* 2단계 메뉴 */
 #gnb .depth2 {
     height: 0;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     overflow: hidden;
     transition: 0.4s;
     border: 1px solid #ddd;
@@ -74,6 +77,7 @@ header h1 {
 #gnb .depth2.on {
     height: auto;   
     opacity: 1;
+    display: block;
 }
 #gnb .depth2 > li > a {
     display: block;
@@ -82,4 +86,21 @@ header h1 {
 }
 #gnb .depth2 > li > a:hover {
     background: #eee;
+}
+
+/* main-visual----------- */
+/* main slider */
+.slider {
+    width: 1200px;
+    height: 300px;
+    /* outline: 4px solid red; */
+    overflow: hidden;
+}
+.slider .sliders img {
+    display: block;
+}
+.sliders {
+    /* 높이값 이동: 1장 = 300px */
+    transform: translateY(calc(-300px * 0));
+    transition: 0.5s;
 }
