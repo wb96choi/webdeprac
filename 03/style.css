@@ -1,0 +1,56 @@
+/* reset--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    color: #333;
+}
+.container {
+    width: 1000px;
+}
+/* layout---100-300-200-100--------------- */
+
+header {
+    width: 200px;
+    height: 650px;
+    background: #aaa;
+    float: left;
+}
+.r_con {
+    width: 800px;
+    height: 650px;
+    background: #bbb;
+    float: left;
+}
+.r_con .slide {
+    width: 100%;
+    height: 350px;
+    background: red;
+}
+.r_con .con {
+    width: 100%;
+    height: 200px;
+    background: green;
+}
+.r_con footer {
+    width: 100%;
+    height: 100px;
+    background: blue;
+}

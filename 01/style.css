@@ -1,0 +1,50 @@
+/* reset--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    color: #333;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* layout---100-300-200-100--------------- */
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #aaa;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+    background: #bbb;
+}
+.con {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
