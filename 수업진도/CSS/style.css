@@ -23,7 +23,7 @@ ul {
 .container {
     width: 1200px;
     margin: 0 auto;
-    background: #ccc;
+    /* background: #ccc; */
     /* outline: 1px solid black; */
 }
 
@@ -32,6 +32,7 @@ header {
     height: 100px;
     position: relative;
     z-index: 999;
+    background-color: #fff;
 }
 header h1 {
     position: absolute;
@@ -111,7 +112,7 @@ header h1 {
 #main {
     display: flex;
     height: 200px;
-    margin-top: 20px;
+    background-color: #fff;
 }
 #main .col {
     /* outline: 1px solid #666; */
@@ -128,6 +129,10 @@ header h1 {
 }
 #notice ul li {
     padding: 5px;
+}
+#notice ul li a {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -149,7 +154,7 @@ header h1 {
 /* 탭 버튼 */
 #main .tab_btn a.notice-btn,
 #main .tab_btn a.gallery-btn {
-    outline: 1px solid #333;
+    /* outline: 1px solid #333; */
     display: inline-block;
     padding: 10px;
 }
@@ -174,4 +179,49 @@ header h1 {
 #main .banner1,
 #main .banner2 {
     padding: 0;
+}
+
+
+
+
+
+footer {
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+footer .footer-logo {
+    width: 200px;
+}
+footer .copy {
+
+}
+footer .SNS {
+    width: 200px;
+}
+
+
+
+.modal {
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    top: 20%;
+    left: 50%;
+}
+.modal.close {
+    display: none;
+}
+.modal .close-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }

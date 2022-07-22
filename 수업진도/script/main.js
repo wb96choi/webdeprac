@@ -78,3 +78,13 @@ $(function(){
 });
 
 
+$(function(){
+
+    $('.modal .close-btn').click(function(){
+        $('.modal').addClass('close')
+    });
+    $('#notice ul li a').click(function(){
+        $('.modal').removeClass('close')
+    });
+})
+
