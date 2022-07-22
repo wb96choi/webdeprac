@@ -110,8 +110,68 @@ header h1 {
 /* contents 1 */
 #main {
     display: flex;
+    height: 200px;
+    margin-top: 20px;
 }
 #main .col {
-    outline: 1px solid #666;
+    /* outline: 1px solid #666; */
     width: 400px;
+    padding: 20px;
+}
+
+
+#notice {
+ 
+}
+#notice ul {
+    margin-top: 10px;
+}
+#notice ul li {
+    padding: 5px;
+}
+
+
+
+#gallery a {
+    display: block;
+    height: 100%;
+    /* outline: 1px solid red; */
+    margin-top: 1em;
+    padding: 10px;
+    padding-top: 0;
+    padding-left: 0;
+}
+#gallery a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 탭 버튼 */
+#main .tab_btn a.notice-btn,
+#main .tab_btn a.gallery-btn {
+    outline: 1px solid #333;
+    display: inline-block;
+    padding: 10px;
+}
+#main .tab-btn {
+    display: flex;
+    margin-bottom: 1em;
+}
+#notice  {
+    display: none;
+}
+#notice.on {
+    display: block;
+}
+#gallery {
+    display: none;
+}
+#gallery.on {
+    display: flex;
+}
+
+
+#main .banner1,
+#main .banner2 {
+    padding: 0;
 }

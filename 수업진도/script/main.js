@@ -57,3 +57,24 @@ $(function(){
         changeSlider(num);
     }, 3000)
 });
+
+
+$(function(){
+
+    // 공지사항/갤러리 tab 버튼
+    $('.tab_btn .notice-btn').click(function(){
+        // 탭 초기화
+        $('.tab_contents').removeClass('on')
+        // 표시
+        $('#notice').addClass('on')        
+    });
+    $('.tab_btn .gallery-btn').click(function(){
+        // 탭 초기화
+        $('.tab_contents').removeClass('on')
+        // 표시
+        $('#gallery').addClass('on')
+    });
+
+});
+
+
