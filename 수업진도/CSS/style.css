@@ -77,7 +77,7 @@ header h1 {
     /* border: 1px solid #ddd; */
 }
 #gnb .depth2.on {
-    max-height: 200px;   
+    max-height: 0;   
     /* opacity: 1; */
     /* display: block; */
 }

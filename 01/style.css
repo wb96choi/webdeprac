@@ -31,17 +31,93 @@ body {
 header {
     width: 100%;
     height: 100px;
-    background: #aaa;
+    /* background: #aaa; */
+    position: relative;
+    z-index: 10;
 }
+header h1 {
+    padding-top: 30px;
+    width: 200px;
+    float: left;
+}
+header h1 a img {
+    width: 200px;
+    height: 40px;
+}
+header nav {
+    /* 임의로 정한 값 */
+    width: 700px;
+    float: right;
+    text-align: center;
+    margin-top: 40px;
+}
+header nav .gnb {
+    width: 100%;
+}
+header nav .gnb > li {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+header nav .gnb > li >a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    font-size: 22px;
+    background: #555;
+    color: #fff;
+}
+header nav .gnb > li >a:hover {
+    background: #333;
+    color: #fff;
+}
+header nav .gnb > li > .sub {
+    width: 100%;
+    background: #ddd;
+    /* 서브메뉴 전체가 내려오는 상황일떄 주석 풀기 */
+    /* height: 160px; */
+    position: absolute;
+    left: 0;
+    top: 50px;
+
+    display: none;
+}
+header nav .gnb > li > .sub > li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+header nav .gnb > li > .sub > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header nav .gnb > li > .sub > li > a:hover {
+    background: #777;
+    color: #fff;
+}
+
 .slide {
     width: 100%;
     height: 300px;
     background: #bbb;
+    position: relative;
 }
 .con {
     width: 100%;
     height: 200px;
     background: #ccc;
+}
+.con .con1 {
+
+}
+.con .con2 {
+    
+}
+.con .con3 {
+    
 }
 footer {
     width: 100%;
