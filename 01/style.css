@@ -40,62 +40,51 @@ header h1 {
     width: 200px;
     float: left;
 }
-header h1 a img {
-    width: 200px;
-    height: 40px;
-}
+
 header nav {
-    /* 임의로 정한 값 */
     width: 700px;
     float: right;
+    margin-top: 50px;
     text-align: center;
-    margin-top: 40px;
 }
-header nav .gnb {
+.gnb {
+    display: flex;
     width: 100%;
 }
-header nav .gnb > li {
+.gnb > li {
     width: 25%;
-    float: left;
+    background: #ccc;
+    height: 50px;
+    line-height: 50px;
+    /* relative는 .sub를 위한 속성 */
     position: relative;
 }
-header nav .gnb > li >a {
-    width: 100%;
-    height: 50px;
+.gnb > li > a {
+    /* block을 해야 a가 li에 꽉 찬다 */
     display: block;
-    line-height: 50px;
-    font-size: 22px;
-    background: #555;
-    color: #fff;
 }
-header nav .gnb > li >a:hover {
+.gnb > li > a:hover {
     background: #333;
     color: #fff;
 }
-header nav .gnb > li > .sub {
+.gnb > li > .sub {
+    position: absolute;
     width: 100%;
     background: #ddd;
-    /* 서브메뉴 전체가 내려오는 상황일떄 주석 풀기 */
-    /* height: 160px; */
-    position: absolute;
-    left: 0;
-    top: 50px;
-
     display: none;
+
+    /* height값은 서브배경이 같이 내려오는 유형에 필요 */
+    height: 200px;
 }
-header nav .gnb > li > .sub > li {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
+.gnb > li > .sub > li {
+    height: 50px;
+    line-height: 50px;
 }
-header nav .gnb > li > .sub > li > a {
+.gnb > li > .sub > li > a {
     display: block;
-    width: 100%;
-    height: 100%;
 }
-header nav .gnb > li > .sub > li > a:hover {
-    background: #777;
+.gnb > li > .sub > li > a:hover {
+    background: #444;
     color: #fff;
 }
 
