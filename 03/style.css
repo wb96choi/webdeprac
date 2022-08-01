@@ -24,6 +24,7 @@ body {
 }
 .container {
     width: 1000px;
+    margin: 0 auto; 
 }
 /* layout---100-300-200-100--------------- */
 
@@ -71,10 +72,12 @@ header nav .gnb > li >a:hover {
 header nav .gnb > li > .sub {
     width: 100%;
     background: #ddd;
-    position: absolute;
+
+    /* 주석처리 on/off */
+    /* position: absolute;
     left: 180px;
     top: 100px;
-    height: 250px;
+    height: 250px; */
 
     display: none;
 }

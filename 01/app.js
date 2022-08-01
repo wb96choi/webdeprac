@@ -18,3 +18,25 @@ $(function(){
         $('ul.sub').stop().slideUp();
     });
 });
+
+
+// 슬라이드
+$(function(){
+    let num = 0;
+
+    function changeSlider(img_num){
+        var img_height = 1200 * img_num;
+
+        $('.slide .slider').css({
+            transform: `translateX(${-img_height}px)` 
+        });
+    }
+
+    setInterval(function(){
+        num++;
+        if(num > 2){
+            num = 0;
+        }
+        changeSlider(num);
+    },3000)
+});
