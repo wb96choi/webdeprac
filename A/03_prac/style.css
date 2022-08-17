@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+header .logo {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+header nav {
+    width: 700px;
+}
+header nav .gnb {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+header nav .gnb > li {
+    width: 25%;
+    height: 50px;
+    border: 1px solid black;
+}
+header nav .gnb > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    display: block;
+}
+header nav .gnb > li:hover > a {
+    background-color: #000;
+    color: #fff;
+}
+header nav .gnb > li > .sub {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: none;
+}
+header nav .gnb > li > .sub > li {
+    width: 100%;
+    height: 30px;
+}
+header nav .gnb > li > .sub > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    display: block;
+}
+header nav .gnb > li > .sub > li > a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+#slide {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#slide .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#slide .slider .slider-img {
+    width: 100%;
+    height: 100%;
+}
+#slide .slider .slider-img:not(:first-child){
+    display: none;
+}
+
+
+
+
+#contents {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+}
+#contents .con {
+    width: calc(100% / 3);
+    height: 100%;
+    outline: 1px solid red;
+}
+#contents .cont1 {
+
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+}
+footer .logo {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+footer .footer-info .footer-menu {
+    background-color: pink;
+    width: 100%;
+    height: 50px;
+}
+footer .footer-info .copyright {
+    background-color: plum;
+    width: 100%;
+    height: 50px;
+}

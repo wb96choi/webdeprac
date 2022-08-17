@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 헤더------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    position: relative;
+}
+header .logo {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+header nav {
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    width: 800px;
+    display: block;
+    text-align: center;
+
+    z-index: 1;
+}
+nav .gnb > li{
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ddd;
+    float: left;
+    position: relative;
+}
+nav .gnb > li:hover > a{
+    background-color: #000;
+    color: #fff;
+}
+nav .gnb > li > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+nav .gnb > li .sub {
+    width: 100%;
+    position: absolute;
+    background-color: #bbb;
+
+    display: none;
+}
+
+nav .gnb > li .sub > li {
+    width: 100%;
+}
+nav .gnb > li > .sub > li:hover > a{
+    background-color: #000;
+    color: #fff;
+}
+nav .gnb > li .sub > li > a {
+    width: 100%;
+    height: 100%;
+    display: block;   
+}
+
+
+/* 메인 비쥬얼---------------- */
+.slider-img {
+    width: 1200px;
+    height: 300px;
+}
+#main-visual {
+    width: 100%;
+    height: 300px;
+    /* background-color: #999; */
+    position: relative;
+    overflow: hidden;
+}
+
+#main-visual .slider {
+    position: absolute;
+    width: 3600px;
+    /* display: flex; */
+    top: 0;
+    left: 0;
+    /* outline: 2px solid red; */
+
+    transition: .5s;  
+}
+#main-visual .slider .slider-img{
+    display: inline-block;
+    float: left;
+}
+
+
+
+
+/* 콘텐츠--------------- */
+#contents {
+    width: 100%;
+    height: 200px;
+    background-color: #888;
+}
+#contents .con {
+    width: calc(100% / 3);
+    height: 100%;
+    outline: 2px solid blue;
+    float: left;
+}
+#contents .cont1 .tap-btn {
+    width: 180px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* outline: 1px solid black; */
+    display: flex;
+}
+#notice-btn {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #ccc;
+    border-bottom: none;
+}
+#notice-btn.on {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#gallery-btn {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #ccc;
+}
+#gallery-btn.on {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#contents .cont1 .notice {
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+
+    
+}
+#contents .cont1 .notice.on {
+    display: none;
+}
+#contents .cont1 .gallery {
+    width: 100%;
+    height: 150px;
+    padding: 20px 20px 20px 20px;
+    display: none;
+    
+    justify-content: space-between;
+    background-color: #fff;
+}
+#contents .cont1 .gallery.on {
+    display: flex;
+}
+.gal-img {
+    width: 90px;
+    height: 90px;
+    background-color: pink;
+}
+
+
+
+/* footer--------------------- */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+}
+footer .footer-logo {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+footer .copyright {
+    float: left;
+    width: 800px;
+    height: 100%;
+    background-color: plum;
+}
+footer .sns {
+    float: right;
+    width: 200px;
+    height: 100%;
+    background-color: pink;
+}
+
+
+
+/* popup------------- */
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+
+    display: none;
+}
+.shadow.on {
+    display: block;
+}
+.shadow .pop-up {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    outline: 3px solid black;
+    background-color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px; */
+    z-index: 10;
+}
+
+.pop-up > header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+}
+.pop-up article {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-color: #ddd;
+}
+.pop-up #close-btn {
+    position: absolute;
+    border: 1px solid black;
+    padding: 5px 10px;
+    right: 25px;
+    bottom: 10px;
+}

@@ -40,3 +40,6 @@ $(function(){
         changeSlider(num);
     },3000)
 });
+
+
+
