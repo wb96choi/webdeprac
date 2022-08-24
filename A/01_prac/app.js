@@ -55,19 +55,21 @@ $(function(){
 
 $(function(){
     var num = 0;
-    function changeSlider(img_num) {
+    
+    function changeSlider(img_num){
         var img_width = 1200 * img_num;
-
         $('#main-visual .slider').css({
-            transform: `translateX(${-img_width}px)`
+            transform : `translateX(${-img_width}px)`
         });
     }
 
     setInterval(function(){
-        num++;
         if(num > 2){
-            num=0;
+            num = 0;
+        }else {
+            num++;
         }
         changeSlider(num);
-    },3000)
-})
+    },3000);
+    
+});

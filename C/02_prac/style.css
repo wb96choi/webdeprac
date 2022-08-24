@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+}
+.wrap {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+
+
+header {
+    width: 200px;
+    height: 100%;
+    background-color: #999;
+}
+header .logo {
+    width: 150px;
+    height: 50px;
+    background-color: pink;
+    margin: 20px auto;
+    
+}
+
+header nav {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+header nav .gnb {
+
+}
+header nav .gnb > li {
+    width: 100%;
+    border: 1px solid black;
+}
+header nav .gnb > li > a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+header nav .gnb > li:hover > a {
+    background-color: #000;
+    color: #fff;
+}
+header nav .gnb > li > .sub {
+    border: 1px solid black;
+    display: none;
+}
+header nav .gnb > li > .sub > li {
+    width: 100%;
+}
+header nav .gnb > li > .sub > li > a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+header nav .gnb > li > .sub > li > a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+#r_con {
+    width: 800px;
+}
+
+#r_con #slide {
+    width: 100%;
+    height: 350px;
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+}
+/* 페이드
+#r_con #slide .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#r_con #slide .slider div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 350px;
+}
+#r_con #slide .slider div:not(:first-child){
+    display: none;
+} */
+/* 가로 */
+#r_con #slide .slider {
+    width: 2400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: .5s;
+}
+#r_con #slide .slider div {
+    width: 800px;
+    height: 350px;
+}
+
+
+
+#r_con #contents {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+}
+#r_con #contents .con {
+    width: calc(100% / 3);
+    height: 100%;
+    /* outline: 1px solid red; */
+}
+#notice {
+    display: flex;
+    flex-direction: column;
+}
+#notice-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#notice > article {
+    width: 100%;
+    height: 140px;
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#gallery {
+    display: flex;
+    flex-direction: column;
+}
+#gallery-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#gallery > article {
+    width: 100%;
+    height: 140px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#gallery .gallery-img {
+    width: 80px;
+    height: 100px;
+    background-color: pink;
+}
+
+
+
+#r_con footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+}
+#r_con footer .copy{
+    width: 600px;
+    height: 100%;
+    background-color: pink;
+}
+#r_con footer .f-info {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+}
+#r_con footer .f-info .sns {
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+}
+#r_con footer .f-info .family {
+    width: 100%;
+    height: 50px;
+    background-color: plum;
+}

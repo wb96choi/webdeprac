@@ -10,15 +10,15 @@ $(function(){
 $(function(){
     var num = 0;
     function changeSlider(img_num){
-        if(num==2){
-            num = 0
-        }else{
+        if(num == 2){
+            num = 0;
+        } else {
             num++;
-        }
+        };
         $('#slide .slider div').eq(num).fadeIn(500);
         $('#slide .slider div').eq(num - 1).fadeOut(500);
+        
     };
-
     setInterval(function(){
         changeSlider();
     }, 3000);
@@ -36,5 +36,14 @@ $(function(){
         $('#gallery').addClass('on');
         $('#notice').removeClass('on');
         $('#notice-btn').removeClass('on');
+    });
+});
+
+$(function(){
+    $('#notice p:first-child').click(function(){
+        $('.popup').addClass('on');
+    });
+    $('.popup #close').click(function(){
+        $('.popup').removeClass('on');
     });
 });
